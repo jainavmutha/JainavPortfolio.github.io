@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Enthusiast</p>
+            <h1>Hi, I'm <span>Jainav</span><br>Transforming Data into Impact</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a current student pursuing a Master's degree in Data Science at Rochester Institute of Technology, I am driven by an insatiable curiosity and a fervent passion for unraveling the mysteries hidden within data. My academic journey has equipped me with a robust foundation.</p>
+                   <p> My journey in the field of Data Science is not just confined to the classroom; it extends into the professional realm through internships. These experiences have allowed me to apply theoretical knowledge to real-world scenarios.</p>
+                   <p>Keen on staying at the forefront of technological advancements, I have delved into projects ranging from Artificial intelligence and deep Learning to prediction to developing an applications. These ventures not only showcase my technical knowledge in machine learning algorithms and software development but also underscore my commitment to using data science for positive societal impact.</p>
+                    
+            
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Java, Python, JavaScript, HTML/CSS, SQL, Node.js, React.js, MATLAB, C++, C, R, XML</li>
+                        <li><span>Tools</span><br>IntelliJ, PyCharm, Eclipse, AWS, Jupyter Notebooks, Git, Bootstrap, Spring Boot, Agile, REST APIs, Jump, Figma, Github, Git, Tableau, Power BI, Django, Flask, Microsoft SharePoint, PowerApps, Power Automate Platform</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Zegatile Info Solutions (May 2022 - Aug 2022)</span><br>Data Engineer intern <br>● Worked on an inhouse built software named “VAIND” which is an End-to-End Hospital Software.
+                            <br>● Analyzed and collected patient data for a 500-bed facility.
+                            <br>● Reduced data redundancy by 40%, resulting in improved data integrity and consistency.
+                            <br>● Perform data mining and analysis on $20 million in net patient revenue annually.</li>
+                        <li><span>Decospaa cloud Technologies (May 2021 - Dec 2021)</span><br>Software Engineer Intern <br>● Redesigned and developed 6 highly interactive web applications using React, resulting in a remarkable 60% increase in user traffic and engagement on the platform.
+                            <br>● Integrated chatbots with web applications to help solve the consumer queries 50% more efficiently.
+                            <br>● Designed and implemented several Rest APIs using Postman and used them on frontend to handle CRUD operations.
+                            <br>● Learned about agile methodology and project management tools such as Jira and GitHub.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2024</span><br>MS Data Science - Rochester Institute of Technology <br> GPA - 3.87/4</li>
+                        <li><span>2018-2022</span><br>B.Tech Electronics Engineering - Vellore Institute of Technology <br> GPA - 8.95/10</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Deep Fake Detector (Coming Soon)</h3>
+                    <p></p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Car Price Predictor</h3>
+                    <p>Provides vital insights into Ford's pricing dynamics, consumer preferences, and future market trends through rigorous data preprocessing and sentiment analysis comparing Ford with Tesla.</p>
+                    <a href="https://github.com/jainavmutha/Car-Price-Prediction-Ford"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Student Performance dashboard</h3>
+                    <p>Developed a modular-coded academic performance prediction model with 20% error reduction, 89% accuracy using ML algorithms, and deployed a Flask-based Web App on AWS Elastic Beanstalk with CI/CD.</p>
+                    <a href="https://github.com/jainavmutha/ml-project"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>AutSpot - An autism facial detector</h3>
+                    <p>Developed a user-ready app with an 83% efficient facial recognition algorithm in Python's OpenCV, FIGMA-designed UI, and integrated calming techniques through AI tools for supporting autistic individuals during episodes.</p>
+                    <a href="https://github.com/jainavmutha/autspot"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-5.png">
+                <div class="layer">
+                    <h3>Hospital patient Readmission</h3>
+                    <p>Developed a readmission prediction model using feature selection, resampling, and machine learning algorithms (XGBoost, AdaBoost, Random Forest, Decision Tree), achieving a 92% recall, enhanced by 1.5% through hyperparameter tuning.</p>
+                    <a href="https://github.com/jainavmutha/readmission-of-patients"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-6.png">
+                <div class="layer">
+                    <h3>NatDisp - Natural Disaster Predictor</h3>
+                    <p>Achieved 95%+ accuracy predicting disasters (Tsunami, Floods, Earthquakes) with ML algorithms, built a Django web app for interactive predictions, and implemented an alert messaging system.</p>
+                    <a href="https://github.com/jainavmutha/NatdisP"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Publications</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h3>Sentiment Analysis on Streaming Data using parallel computing. </h3>
+                <p></p>
+                <a href="https://digital-library.theiet.org/content/books/10.1049/pbpc044e_ch4">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h3>Pen Testing: Attack a vulnerable Metasploitable Machine</h3>
+                <a href="https://www.opensourceforu.com/2021/07/pen-testing-attacking-a-vulnerable-metasploitable-machine/">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h3>A Cloud-Based Prediction and Self-Diagnosis System for PCOS Using Machine Learning Models</h3>
+                <p></p>
+                <a href="https://link.springer.com/chapter/10.1007/978-981-19-8338-2_39">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h3>Heart Disease Diagnosis using Machine Learning</h3>
+                <p></p>
+                <a href="https://www.ijert.org/heart-disease-diagnosis-using-machine-learning-2">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-paper-plane"></i> jm9869@g.rit.edu</p>
+                <p><i class="fa fa-regular fa-phone"></i> 5853638215</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jainav.mutha?mibextid=LQQJ4d" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/jainavmutha/"  class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/jainavmutha/"  class="fa fa-linkedin"></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxRXqCE7UqRvQxyhlRbMc2GjjZg35g_09cAPWduoXRELCQyzs2BNnbgfwIzPHRxkHIvDQ/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
